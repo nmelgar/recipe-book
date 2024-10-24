@@ -8,7 +8,10 @@ function convertToJson(res) {
 
 export default class ProductData {
     constructor() {
-        this.path = '/public/json/superheroes.json'; // ensure this matches the deployed path
+        // this.path = '../public/json/superheroes.json';
+        // this.path = './json/superheroes.json';
+        this.path = '/public/json/superheroes.json';
+
     }
 
     getData() {
