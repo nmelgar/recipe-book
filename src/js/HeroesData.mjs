@@ -10,8 +10,7 @@ export default class ProductData {
     constructor() {
         // this.path = '../public/json/superheroes.json';
         // this.path = './json/superheroes.json';
-        this.path = '/public/json/superheroes.json';
-
+        this.path = '/json/superheroes.json';
     }
 
     getData() {
