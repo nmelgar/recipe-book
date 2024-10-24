@@ -204,9 +204,10 @@ body>main>section.products>ul>div>div>a {
   background-color: #ed6d6d;
 }
 
-.divider {
+/* .divider {
   border-bottom: 2px solid #ff3131;
-}
+} */
+
 
 /* End utility classes */
 
@@ -245,7 +246,7 @@ body>main>section.products>ul>div>div>a {
 .product-list {
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-between;
+  justify-content: center;
   list-style-type: none;
   padding: 0;
 }
@@ -259,6 +260,11 @@ body>main>section.products>ul>div>div>a {
 footer {
   font-size: var(--small-font);
   padding: 1em;
+}
+
+hr {
+  border: 1px solid #ff3131;
+  margin-bottom: 30px;
 }
 
 /* RESPONSIVENESS */

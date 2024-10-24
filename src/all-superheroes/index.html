@@ -5,19 +5,24 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>All Superheroes</title>
-    <link rel="stylesheet" href="../css/style.css" /> <!-- Adjust path based on your directory structure -->
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/searchbar.css" />
+
 </head>
 
 <body>
-    <header id="main-header"></header> <!-- Placeholder for header -->
+    <header id="main-header"></header>
     <main class="divider">
         <section class="products">
             <h2>All Superheroes</h2>
-            <ul class="product-list"></ul> <!-- This will hold the superhero cards -->
+            <div class="search-container">
+                <input type="text" id="search-input" placeholder="Search for a hero..." />
+            </div>
+            <ul class="product-list"></ul>
         </section>
     </main>
-    <footer id="main-footer"></footer> <!-- Placeholder for footer -->
-    <script type="module" src="../js/allSuperheroes.js"></script> <!-- Adjust path based on your directory structure -->
+    <footer id="main-footer"></footer>
+    <script type="module" src="../js/allSuperheroes.js"></script>
 </body>
 
 </html>
