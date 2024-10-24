@@ -1,0 +1,295 @@
+:root {
+  --font-body: Arial, Helvetica, sans-serif;
+  --font-headline: Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  /* colors */
+  --primary-color: #f0a868;
+  --secondary-color: #525b0f;
+  --tertiary-color: #ff3131;
+  --light-grey: #d0d0d0;
+  --dark-grey: #303030;
+
+  /* sizes */
+  --font-base: 18px;
+  --small-font: 0.8em;
+  --large-font: 1.2em;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: var(--font-base);
+  color: var(--dark-grey);
+}
+
+img {
+  max-width: 100%;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+
+.logo {
+  line-height: 60px;
+  width: 245px;
+  overflow: hidden;
+  display: flex;
+  font-size: 30px;
+  text-align: right;
+  font-family: var(--font-headline);
+}
+
+.logo img {
+  width: 60px;
+  height: 60px;
+}
+
+.logo a {
+  text-decoration: none;
+  color: var(--font-body);
+}
+
+.hero {
+  position: relative;
+}
+
+.hero .logo {
+  position: absolute;
+  left: calc(50% - 60px);
+  bottom: -10px;
+  background-color: white;
+}
+
+/* utility classes */
+.highlight {
+  color: var(--tertiary-color);
+}
+
+button {
+  padding: 0.5em 2em;
+  background-color: var(--secondary-color);
+  color: white;
+  margin: auto;
+  display: block;
+  border: 0;
+  font-size: var(--large-font);
+  cursor: pointer;
+}
+
+/* SUPERHEROE CARD*/
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  overflow: hidden;
+  width: calc(25% - 20px);
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card-image {
+  width: 100%;
+  height: auto;
+}
+
+.card-content {
+  padding: 15px;
+}
+
+.card-title {
+  font-size: 1.5em;
+  margin: 0;
+}
+
+.card-stat {
+  margin: 5px 0;
+}
+
+/* SUPERHEROE CARD FINISH */
+
+/* SUPERHEROE DETAILS*/
+.hero-details {
+  padding: 20px;
+  text-align: center;
+}
+
+.hero-detail-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px auto;
+  max-width: 800px;
+  background: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.hero-image {
+  width: 40%;
+  height: auto;
+  border-right: 2px solid #ff3131;
+}
+
+.hero-info {
+  padding: 20px;
+  width: 60%;
+  text-align: left;
+}
+
+.hero-name {
+  font-size: 2em;
+  margin: 10px 0;
+  color: #ff3131;
+}
+
+.card-button {
+  display: inline-block;
+  background-color: #ff3131;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-top: 15px;
+  transition: background-color 0.3s;
+}
+
+body>main>section.products>ul>div>div>a {
+  color: white;
+  font-size: 14px;
+}
+
+.card-button:hover {
+  background-color: #ed6d6d;
+}
+
+.divider {
+  margin: 15px 0;
+  border: 0;
+  border-top: 1px solid #ff3131;
+}
+
+/* SUPERHEROE DETAILS END*/
+
+.see-all-button {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 15px;
+  background-color: #ff3131;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.see-all-button:hover {
+  background-color: #ed6d6d;
+}
+
+.divider {
+  border-bottom: 2px solid #ff3131;
+}
+
+/* End utility classes */
+
+
+.mission {
+  padding: 2em 1em;
+  line-height: 1.6;
+  max-width: 600px;
+  margin: 2em auto;
+  background-color: #f0f8ff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+}
+
+.mission p {
+  font-size: 1.5em;
+  margin: 0;
+  font-weight: 300;
+}
+
+.super-span {
+  color: #ffdf2b;
+}
+
+.heroes-span {
+  color: #ff3131;
+}
+
+.products {
+  padding: 0.5em;
+}
+
+.product-list {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  list-style-type: none;
+  padding: 0;
+}
+
+.product-list a {
+  text-decoration: none;
+  color: var(--dark-grey);
+}
+
+
+footer {
+  font-size: var(--small-font);
+  padding: 1em;
+}
+
+/* RESPONSIVENESS */
+
+@media screen and (min-width: 500px) {
+  body {
+    max-width: 1080px;
+    margin: auto;
+  }
+
+  .mission {
+    font-size: 1.2em;
+  }
+
+  .cart-card {
+    font-size: inherit;
+    grid-template-columns: 150px auto 15%;
+  }
+}
+
+
+/* DISPLAY 2 CARDS */
+@media (max-width: 768px) {
+  .card {
+    width: calc(50% - 20px);
+  }
+}
+
+/* DISPLAY 1 CARD */
+@media (max-width: 480px) {
+  .card {
+    width: calc(100% - 20px);
+  }
+}
