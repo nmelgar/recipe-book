@@ -59,15 +59,13 @@ export async function loadHeaderFooter() {
     const headerElement = document.getElementById("main-header");
     const footerElement = document.getElementById("main-footer");
 
-    renderWithTemplate(headerTemplate, headerElement, "afterbegin", true, () => {
-      updateCartCount();
-    });
-
+    renderWithTemplate(headerTemplate, headerElement, "afterbegin", true);
     renderWithTemplate(footerTemplate, footerElement, "afterbegin", true);
   } catch (error) {
     console.error("Error loading header or footer:", error);
   }
 }
+
 
 
 
