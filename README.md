@@ -1,5 +1,5 @@
 # Superheroes Directory
-# URL - //
+# URL - https://superheroes-directory.netlify.app/
 
 ## Description
 
