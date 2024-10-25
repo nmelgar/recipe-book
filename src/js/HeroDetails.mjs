@@ -24,7 +24,7 @@ async function displayHeroDetails() {
         const hero = superheroes.find(h => h.id == heroId); // find the specific hero by ID
 
         if (hero) {
-            // render the hero details
+            // render the hero details with a back button
             heroContent.innerHTML = `
                 <div class="hero-detail-container">
                     <img src="${hero.images.md}" alt="${hero.name}" class="hero-image" />
@@ -39,6 +39,11 @@ async function displayHeroDetails() {
                         <p><strong>Power:</strong> ${hero.powerstats.power}</p>
                         <p><strong>Combat:</strong> ${hero.powerstats.combat}</p>
                     </div>
+                </div>
+                <div class="back-button-container">
+                    <button onclick="window.location.href='../all-superheroes/index.html'" class="back-button">
+                        &larr; Back to All Superheroes
+                    </button>
                 </div>
             `;
         } else {

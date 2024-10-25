@@ -2,11 +2,13 @@
     --font-body: Arial, Helvetica, sans-serif;
     --font-headline: Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     /* colors */
-    --primary-color: #f0a868;
-    --secondary-color: #525b0f;
-    --tertiary-color: #ff3131;
-    --light-grey: #d0d0d0;
-    --dark-grey: #303030;
+    --primary-color: #ff3131;
+    --secondary-color: #ffdf2b;
+    --black-color: #000000;
+    --white-color: #ffffff;
+    --light-grey: #f9f9f9;
+    --dark-shadow: rgba(0, 0, 0, 0.1);
+    --dark-shadow-2: rgba(0, 0, 0, 0.2);
 }
 
 /* SEARCH BAR*/
@@ -23,14 +25,15 @@
     font-size: 16px;
     border: 2px solid var(--primary-color);
     border-radius: 25px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 5px var(--dark-shadow);
     outline: none;
     transition: box-shadow 0.3s ease;
 }
 
 #search-input:focus {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    border-color: var(--tertiary-color);
+    box-shadow: 0 4px 8px var(--dark-shadow-2);
+    border-color: var(--secondary-color);
+    color: red;
 }
 
 /* adjustments for smaller screens */
