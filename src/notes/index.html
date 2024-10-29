@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Superhero Notes</title>
+    <link rel="stylesheet" href="../css/style.css" />
+</head>
+
+<body>
+    <header id="main-header"></header>
+    <main class="notes">
+        <h2>Create Your Notes</h2>
+        <div class="note-container">
+            <input type="text" id="hero-name" placeholder="Superhero Name" />
+            <textarea id="note-content" placeholder="Write your note here..."></textarea>
+            <button id="save-note" class="card-button">Save Note</button>
+        </div>
+        <h3>Your Notes</h3>
+        <ul class="notes-list"></ul>
+    </main>
+    <footer id="main-footer"></footer>
+    <script type="module" src="../js/utils.mjs"></script>
+    <script type="module" src="../js/notes.js"></script>
+</body>
+
+</html>
